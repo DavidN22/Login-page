@@ -1,0 +1,40 @@
+session storage 
+
+
+
+if (response.ok) {
+  console.log("Login successful");
+  sessionStorage.setItem('userEmail', userEmail);
+  sessionStorage.setItem('loggedIn', 'true'); // Add this line
+  window.location.href = '/Celeb-Talk';
+}
+
+
+function keepUserInCelebTalkIfLoggedIn() {
+  const loggedIn = sessionStorage.getItem('loggedIn') === 'true';
+  const notInCelebTalk = window.location.pathname !== '/Celeb-Talk';
+
+  if (loggedIn && notInCelebTalk) {
+    window.location.href = '/Celeb-Talk';
+  }
+}
+
+
+
+function redirectToLoginPageIfNotLoggedIn() {
+  const loggedOut = sessionStorage.getItem('loggedIn') !== 'true';
+  const location = window.location.pathname === '/Celeb-Talk';
+
+    if (loggedOut && location) {
+       window.location.href = '/';
+}
+}
+
+async function signOuts() 
+  await firebase.auth().signOut();
+  sessionStorage.setItem('loggedIn', 'false');
+  redirectToLoginPageIfNotLoggedIn();
+
+  keepUserInCelebTalkIfLoggedIn();
+
+  redirectToLoginPageIfNotLoggedIn();

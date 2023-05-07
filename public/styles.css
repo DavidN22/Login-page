@@ -1,0 +1,67 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+    #login-link:hover,
+    #forgot-password-link:hover {
+      cursor: pointer;
+    }
+    #forgot-password-link {
+      margin-left: 53px;
+    }
+
+    .form-check-label {
+      margin-left: 3px;
+      margin-bottom: -1px;
+  }
+    
+    .btn-login {
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
+      padding: 0.75rem 1rem;
+    }
+    
+    .btn-google {
+      width: 100%;
+      color: white !important;
+      background-color: #ea4335;
+    }
+    
+    .btn-facebook {
+      color: white !important;
+      background-color: #3b5998;
+    }
+
+    .close {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1c1d1f;
+      text-shadow: none;
+      opacity: 1;
+      border: none;
+      transition: color 0.2s;
+      background: none;
+    }
+    
+    .close:hover {
+      color: #000;
+      text-decoration: none;
+      opacity: 1;
+    }
+   
